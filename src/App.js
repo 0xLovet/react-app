@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar";
+import Main from "./components/main";
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+import Footer from "./components/footer";
+
+
+class App extends Component {
+  
+  /*state={
+    cards: [
+      {id: 0, nome: "primo", prezzo: 0.005, img: img1, quantità: 0 },
+      {id: 1, nome: "secondo", prezzo: 0.015, img: img2, quantità: 0 },
+      {id: 2, nome: "terzo", prezzo: 0.05, img: img3, quantità: 0 }
+    ]
+  }
+
+  handleDelete = cardId =>  {
+    const cards = this.state.cards.filter(card => card.id !== cardId);
+    this.setState({ cards });
+  }
+
+  handleIncrement = card => {
+    const cards = [...this.state.cards];
+    const id = cards.indexOf(card);
+    cards[id] = { ...card };
+    cards[id].quantità++;
+    this.setState({ cards });
+  }
+  */
+
+  render() {
+    return (
+      <div className="background">
+        <Navbar/>
+        <Main/>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;
+

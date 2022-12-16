@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+.background {
+  height: 100%;
+  width: 100%;
+  background: center, url(./images/bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*** SecHome ***/
+.title {
+  text-align: start;
+  z-index: 90;
+  color: white;
+  font-size: 6vw;
+  text-shadow: 10px 10px 10px #000000;
+  position: absolute;
+  top: 35vh;
+  left: 30vh;
+}
+.text-1{
+  font-size: 2.5vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  width: 100%;
+  height: 92vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.disk {
+  background-image: url(./images/fgm_animated.svg);
+  z-index: 10;
+  background-size:contain;
+  position: absolute;
+  top: -20vh;
+  left: -20vh;
+  background-repeat: no-repeat;
+  height: 120vh;
+  aspect-ratio: 1;
+}
+.leftside{
+  display: inline-block;
+  background-color: white;
+  z-index: 10;
+  height: 92vh;
+  width: 100vh;
+}
+.rightside{
+  display: inline-block;
+  vertical-align: top;
+  z-index: 10;
+  margin: 5vh 5vh;
+  width: 30vw;
+  background: rgba(1,1,1,0.4);
+  padding: 1vw;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0,0.5);
+}
+.textinfo{
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw 0 0vw 0;
+  margin: auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Buttons */
+.my-btn {
+  border: none;
+  color: white;
+  padding: 1vw 2vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  margin: 1vw 1.5vw 1.5vw 1.5vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0,0.5);
+  border-radius: 20px;
+  background-color: black; 
+  color: white; 
+}
+.my-btn:hover {
+  background-color: white;
+  color: black;
+}
+.my-btn:hover .refresh{
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+}
+/**/
+
+
+.title-2{
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  text-shadow: 10px 10px 10px #000000;
+  padding: 50px;
+}
+.text-2{
+  font-size: 3.5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sec-2 {
+  background-color: black;
+}
+.sec-3 {
+  /*background-image: linear-gradient(white,#0f74d9);*/
+  margin-top: 20vh;
+}
+
+.my-modal{
+  z-index: 99;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0,0.8);
+  padding: 0 40px 40px 40px;
+  border-radius: 20px;
+}
+
+.modal-title{
+  padding: 20px 0 20px 0px;
+}
+
+.input-modal{
+  min-width: 100px !important;
+  max-width: min-content !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+
+.hcard {
+  color: white;
+  margin-top: 100px;
+  background: rgba(0, 0, 0,0.5) !important;
+  border-radius: 40px !important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0,0.5);
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #fff;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.baseBlock:hover {
+	-webkit-transform: translate(0, -8px);
+	-moz-transform: translate(0, -8px);
+	-ms-transform: translate(0, -8px);
+	-o-transform: translate(0, -8px);
+	transform: translate(0, -8px);
+	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.small-btn{
+  font-size: 20px !important;
+}
+
+/* Social icons */
+.social-icons{
+  padding: 0vw;
+  text-align: center;
+}
+.social-icons a{
+  display: inline-block;
+}
+.social-icons-img{
+  width: 4vw;
+  height: 4vw;
+  padding: 0.5vw;
+  transition: transform 0.5s; /* Animation */
+}
+.icon-polygon{
+  width: 10vw !important;
+  height: 7vw !important;
+}
+.social-icons-img:hover{
+  transform: scale(1.5);
+}
+/**/
+
+
+@media screen and (max-width: 900px) {
+
+  .disk {
+    height: 70vh;
+    width: 140%;
+    position: absolute;
+    top: -10%;
+    left: -40%;
   }
-  to {
-    transform: rotate(360deg);
+  .leftside{
+    display: inline-block;
+    background-color: white;
+    z-index: 10;
+    height: 46.75vh;
+    width: 100%;
+  }
+  .title {
+    font-size: 60px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  .rightside{
+    display: inline-block;
+    vertical-align: top;
+    z-index: 10;
+    margin: 5vw 5vw;
+    width: 90vw;
+    padding: 1vw;
+
   }
 }
+
+

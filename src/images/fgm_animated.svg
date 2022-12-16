@@ -1,0 +1,16 @@
+<svg width="1500" height="1500" viewBox="0 0 1500 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="750" cy="750" r="750" fill="#000000"/>
+<circle cx="116" cy="815" r="80" fill="#1E24BF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M345 380L274.785 609.662L111 434.023L345 380V380Z" fill="#C41C1C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M587 1274L536.89 1437.9L420 1312.56L587 1274V1274Z" fill="#61FF00"/>
+<path d="M260 1233L196 1029" stroke="#F2C555" stroke-width="10" stroke-linecap="round"/>
+<circle cx="800" cy="1388" r="50" fill="#FFEADA"/>
+<circle cx="820.5" cy="125.5" r="101.5" fill="#E38541"/>
+<path d="M1148.79 563.629L1391.71 427" stroke="#00CECE" stroke-width="8" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1228 259L1183.89 403.275L1081 292.938L1228 259V259Z" fill="#7C13E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1445.01 684L1413.8 786.086L1341 708.014L1445.01 684V684Z" fill="#DBFF00"/>
+<path d="M553.14 103L419.669 259.493" stroke="#8EFF92" stroke-width="8" stroke-linecap="round"/>
+<path d="M1032.24 1329.29L1080.8 1274.14L1129.35 1219" stroke="#FFA0A0" stroke-width="10" stroke-linecap="round"/>
+<circle cx="1281" cy="1029" r="92" fill="#1EB6BF"/>
+<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="15s" additive="sum" repeatCount="indefinite" />
+</svg>
